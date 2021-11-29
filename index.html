@@ -12,11 +12,12 @@
     <title>My Profile</title>
   </head>
   <body>
-    <div class="header" style="background-color:#B0C4DE">
-
+    <div class="header">
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">AC.</a>
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo.gif" alt="Logo Ályson Campos" width="60">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,10 +49,9 @@
               <a class="dropdown-item" href="#">Whatsapp</a>
             </div>
           </li>
-
         </ul>
       </div>
-  </nav>
+    </nav>
   <!-- NavBar -->
 
   <!-- Carousel -->
@@ -88,7 +88,7 @@
   <!-- Carousel -->
 
   <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: #4682B4">
+    <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Sobre mim</h1>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsa! Repellendus sunt maiores magnam dolor, quidem repellat blanditiis velit, dolores et modi numquam. Voluptatibus dolore, modi culpa laborum est suscipit!</p>
@@ -97,76 +97,35 @@
     </div>
   <!-- Jumbotron -->
 
-  <!-- Card -->
   <div class="container">
+    <!-- Card -->
       <div class="card-columns">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="./assets/img/card.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title that wraps to a new line</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
-          <div class="card p-3">
-            <blockquote class="blockquote mb-0 card-body">
-              <p>A well-known quote, contained in a blockquote element.</p>
-              <footer class="blockquote-footer">
-                <small class="text-muted">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </div>
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="./assets/img/card.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card bg-primary text-white text-center p-3">
-            <blockquote class="blockquote mb-0">
-              <p>A well-known quote, contained in a blockquote element.</p>
-              <footer class="blockquote-footer text-white">
-                <small>
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </div>
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
           <div class="card">
-            <img src="..." class="card-img" alt="...">
-          </div>
-          <div class="card p-3 text-right">
-            <blockquote class="blockquote mb-0">
-              <p>A well-known quote, contained in a blockquote element.</p>
-              <footer class="blockquote-footer">
-                <small class="text-muted">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </div>
-          <div class="card">
+            <img src="./assets/img/card.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-          </div>
         </div>
-  <!-- Card -->
+      </div>
+    <!-- Card -->
 
-  <!-- Texto e Video -->
-  <div class="row mt-5 mb-5">
+    <!-- Texto e Video -->
+    <div class="row mt-5 mb-5">
       <div class="col-md-6">
           <h3>Texto teste</h3>
           <p>
@@ -186,38 +145,44 @@
         allowfullscreen
         ></iframe>
       </div>
-  </div>
-  <!-- Texto e Video -->
-
-  <!-- Formulário -->
-  <div class="row mb-5"> 
-    <div class="col-md-12">
-      <h4 class="text-center">
-        Entre em contato com a gente
-      </h4>
     </div>
-  </div>
+    <!-- Texto e Video -->
 
-  <div class="row d-flex align-items-center">
+    <!-- Formulário -->
+    <div class="row mb-5"> 
+      <div class="col-md-12">
+        <h4 class="text-center">
+          Entre em contato
+        </h4>
+      </div>
+    </div>
 
-    <div class="col-md-6 w-100 h-100">
-      <form>
+    <div class="row d-flex align-items-center">
 
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
+      <div class="col-md-6 w-100 h-100">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nome</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="digite seu nome">
+          </div>
 
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
 
-        <div class="form-group d-flex justify-content-end">
-          <button class="btn-outline-success">Enviar</button>
-        </div>
+    
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Assunto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
 
-      </form>
+          <div class="form-group d-flex justify-content-end">
+          <!-- <button class="btn-outline-success">Enviar</button> -->
+          <button  type="button" class="btn btn-block" style="background-color: #9b3496;">Enviar</button>
+          </div>
+
+        </form>
     </div>
 
     <div class="col-md-6 w-100 h-100"> 
@@ -229,9 +194,10 @@
     
   </div>
   <!-- Formulário -->
+</div>
 
 <!-- Footer -->
-<hr>
+<hr class="my-4" style="background-color: black;">
 <footer>
     <div class="row mb-3">
       <div class="col-md-12 d-flex justify-content-center">
@@ -261,10 +227,6 @@
 </footer>
 <!-- Footer -->
 </div>
-
-</div>
-    
-
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
